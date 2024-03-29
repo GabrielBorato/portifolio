@@ -1,0 +1,202 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url('648568-developer-code.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 80px auto; /* Define margem superior e inferior como 80px e margem lateral automática */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    position: absolute; /* Altera para posicionamento absoluto */
+    top: -1%; /* Posiciona no topo */
+    left: 50%; /* Posiciona no meio */
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    width: 80%; /* Define a largura do container como 60% */
+    height: 30%; /* Define a altura do container como 60% */
+    transition: background-color 0.5s;
+    color: rgb(0, 0, 0);
+    z-index: -1; /* Coloca atrás da imagem */
+}
+
+
+
+#changeThemeButton {
+    position: fixed; /* Posicionamento fixo em relação à janela do navegador */
+    top: 1%; /* Posiciona no topo */
+    left: 81%;
+    z-index: 999; /* Garante que o botão fique sobre outros elementos */
+    margin-top: 50px; /* Afasta o botão do .container */
+    margin-right: 210px;
+    border-top-left-radius: 30px; /* Borda arredondada no canto superior esquerdo */
+    border-top-right-radius: 30px; /* Borda arredondada no canto superior direito */
+    border-bottom-left-radius: 30px; /* Borda arredondada no canto inferior esquerdo */
+    border-bottom-right-radius: 30px; 
+    border: none; /* Remove a borda */
+    border-radius: 10px; /* Borda arredondada */
+    background-color: #000000; /* Cor de fundo do botão */
+    color: rgb(255, 255, 255); /* Cor do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    font-size: 16px; /* Tamanho da fonte do texto do botão */
+    cursor: pointer; /* Altera o cursor ao passar sobre o botão */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); /* Reduzindo a intensidade da sombra */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transições suaves */
+    font-weight: bold;
+    
+}
+
+#changeThemeButton:hover {
+    background-color: rgb(141, 141, 141);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.descricao {
+    font-size: 20px;
+    font-family: "Arial", sans-serif;
+    font-weight: lighter;
+    margin-top: 20px; /* Ajuste conforme necessário */
+    position: absolute;
+    top: 130px; /* Ajuste conforme necessário */
+    left: 250px; /* Ajuste conforme necessário */
+}
+
+.photo {
+    margin: 50px; /* Adiciona um espaço entre a foto e o nome */
+    position: relative; /* Define o posicionamento relativo */
+}
+
+.photo img {
+    border-radius: 50%; /* Torna a imagem circular */
+    width: 300px; /* Define a largura da imagem */
+    height: 300px; /* Define a altura da imagem */
+    box-shadow: 0 5px 9px rgba(0, 0, 0, 0.3); /* Adiciona sombreamento */
+}
+
+.profile-name {
+    font-size: 36px;
+    font-family: "Arial", sans-serif;
+    font-weight: bold; /* Adiciona negrito */
+    position: absolute; /* Define o posicionamento absoluto */
+    top: 0px; /* Distância do topo */
+    left: 220px; /* Distância da esquerda */
+}
+
+
+.cargo {
+    font-size: 24px;
+    font-weight: lighter;
+    font-family: "Arial", sans-serif;
+    margin-top: 10px; /* Ajuste conforme necessário */
+    position: absolute;
+    top: 60px; /* Ajuste conforme necessário */
+    left: 250px; /* Ajuste conforme necessário */
+}
+
+body.light-theme {
+    background-image: url('648568-developer-code-green.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.light-theme .container {
+    background-color: #000000; 
+}
+.light-theme .links-container {
+    background-color: #000000; 
+}
+.container.light-theme {
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+}
+.light-theme.container1,
+.light-theme.container2,
+.light-theme.container3,
+.light-theme.container4,
+.light-theme.container5 {
+    background-image: url('648568-developer-code-green.png');
+    border-radius: 30%; /* Bordas arredondadas */
+    padding: 30px; /* Adiciona um espaço interno */
+    background-size: cover;
+}
+.links-container {
+    border-top-left-radius: 30px; /* Reduzindo o raio das bordas */
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: #5c0202;
+    padding: 15px; /* Reduzindo o preenchimento interno */
+    margin: 80px; /* Reduzindo a margem externa */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); /* Reduzindo a intensidade da sombra */
+    position: absolute;
+    top: 30%;
+    left: 76%;
+    transform: translateX(-30%);
+    transition: background-color 0.5s;
+    color: white;
+}
+
+/* Estilo para todos os containers */
+.footer-links {
+    display: flex; /* Define o layout como flexível */
+    justify-content: space-around; /* Distribui o espaço disponível igualmente entre os elementos */
+    align-items: center; /* Centraliza os itens verticalmente */
+    margin-top: 270px; /* Distância do topo */
+}
+
+/* Estilo para os containers */
+.container1,
+.container2,
+.container3,
+.container4,
+.container5 {
+    
+    background-image: url('648568-developer-code.png');
+    border-radius: 30%; /* Bordas arredondadas */
+    padding: 30px; /* Adiciona um espaço interno */
+    background-size: 110%; /* Tamanho do background um pouco maior que a imagem */
+    background-position: center; /* Centraliza o background */
+    border: 10px solid white; /* Adiciona uma borda branca */
+    box-sizing: border-box; /* Garante que a borda esteja incluída no cálculo do tamanho */
+}
+/* Estilo para o primeiro container */
+.container1 {
+    margin-right: 10px; /* Margem direita para separação */
+}
+
+/* Estilo para o segundo container */
+.container2 {
+    margin-right: 10px; /* Margem direita para separação */
+}
+
+/* Estilo para o terceiro container */
+.container3 {
+    margin-right: 10px; /* Margem direita para separação */
+}
+
+/* Estilo para o quarto container */
+.container4 {
+    margin-right: 10px; /* Margem direita para separação */
+}
+
+.light-theme .container1,
+.light-theme .container2,
+.light-theme .container3,
+.light-theme .container4,
+.light-theme .container5 {
+    border-color: black;
+    
+}
+
+
